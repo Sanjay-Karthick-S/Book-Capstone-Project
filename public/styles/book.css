@@ -1,0 +1,96 @@
+.book-form {
+    background-color: #F564A9;
+    padding: 20px;
+    width: fit-content;
+    color: #533B4D;
+    border-radius: 20px;
+
+    h1 {
+        margin-bottom: 20px;
+
+    }
+
+    .book-form-input {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        input,
+        textarea {
+            background-color: #FAE3C6;
+        }
+
+        .ck-editor__editable_inline {
+            min-height: 200px;
+            margin-left: 10px;
+            width: 180px;
+            background-color: #FAE3C6 !important;
+        }
+        .ck-sticky-panel{
+            width: 202px !important;
+            margin-left: 10px;
+            
+        }
+    }
+
+    .submit-btn {
+        background-color: #FAA4BD;
+        color: #533B4D;
+        width: 100px;
+        font-size: 20px;
+    }
+}
+
+.book-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.book-details img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.book-details div {
+    max-width: 600px;
+}
+
+.book-details h2 {
+    margin: 0 0 10px 0;
+}
+
+.book-details p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.book-action {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+.ck.ck-toolbar {
+    flex-wrap: wrap !important;
+}
+
+.edit-form .ck-editor {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+}
+
+.edit-form {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box !important;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}

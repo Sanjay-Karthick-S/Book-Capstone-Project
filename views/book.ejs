@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/book.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <form class="book-form" method="post" action="/added-books">
+            <h1>Add Book</h1>
+            <div class="book-form-input">
+                <label for="name">Book Name</label>
+                <input type="text" name="bname" id="name">
+            </div>
+            <div class="book-form-input">
+                <label for="img">Book Image Id</label>
+                <input type="text" name="bimg" id="img">
+            </div>
+            <div class="book-form-input">
+                <label for="editor">Book Description</label>
+                <textarea name="bdesc" rows="5" id="editor"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+
+
+        </form>
+    </center>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <script>
+       document.querySelectorAll("#editor").forEach((el) => {
+            ClassicEditor.create(el, {
+                toolbar: [
+                    'heading', '|',
+                    'bold', 'italic', 'link', '|',
+                    'bulletedList', 'numberedList', '|',
+                    'undo', 'redo'
+                ],
+                toolbar: {
+                    shouldNotGroupWhenFull: true
+                }
+            }).catch(error => {
+                console.error(error);
+            });
+        });
+    </script>
+</body>
+
+</html>
